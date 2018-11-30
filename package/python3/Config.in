@@ -112,6 +112,12 @@ config BR2_PACKAGE_PYTHON3_ZLIB
 	help
 	  zlib support in Python3
 
+config BR2_PACKAGE_PYTHON3_TKINTER
+	bool "tkinter module"
+	depends on BR2_PACKAGE_TK
+	help
+	  tkinter support in Python
+
 endmenu
 
 endif
