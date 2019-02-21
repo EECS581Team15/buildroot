@@ -79,6 +79,10 @@ config BR2_PACKAGE_RPI_FIRMWARE_INSTALL_VCDBG
 	help
 	  Install vcdbg, to help debug communication with the GPU.
 
+config BR2_PACKAGE_RPI_FIRMWARE_CUSTOM_CONFIG_TXT
+	string "config.txt location"
+	default "package/rpi-firmware/config.txt"
+
 comment "vcdbg needs a glibc toolchain w/ C++"
 	depends on BR2_arm
 	depends on !BR2_TOOLCHAIN_USES_GLIBC || !BR2_INSTALL_LIBSTDCPP
