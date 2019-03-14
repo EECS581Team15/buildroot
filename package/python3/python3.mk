@@ -126,7 +126,7 @@ PYTHON3_CONF_OPTS += --disable-ossaudiodev
 endif
 
 ifneq ($(BR2_PACKAGE_PYTHON3_TKINTER),y)
-PYTHON3_DEPENDENCIES += tk
+PYTHON3_DEPENDENCIES += tk tcl
 PYTHON3_CONF_OPTS += --disable-tk
 endif
 
